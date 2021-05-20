@@ -1,4 +1,4 @@
-module MyLib (someFunc) where
+module Humane (someFunc) where
 
 someFunc :: IO ()
 someFunc = putStrLn "someFunc"

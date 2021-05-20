@@ -4,7 +4,7 @@ cabal-version:       3.0
 -- For further documentation, see http://haskell.org/cabal/users-guide/
 
 -- The name of the package.
-name:                humane
+name:                humane-parsing
 
 -- The package version.  See the Haskell package versioning policy (PVP)
 -- for standards guiding when and how versions should be incremented.
@@ -60,7 +60,7 @@ library
   -- other-extensions:
 
   -- Other library packages from which modules are imported.
-  build-depends:       base ^>=4.12.0.0
+  build-depends:       base >=4.12.0.0 && < 4.16
 
   -- Directories containing source files.
   hs-source-dirs:      src
@@ -80,7 +80,7 @@ executable humane
   -- other-extensions:
 
   -- Other library packages from which modules are imported.
-  build-depends:       base ^>=4.12.0.0, humane
+  build-depends:       base, humane
 
   -- Directories containing source files.
   hs-source-dirs:      app
@@ -103,5 +103,5 @@ test-suite humane-test
   main-is:             MyLibTest.hs
 
   -- Test dependencies.
-  build-depends:       base ^>=4.12.0.0
+  build-depends:       base
 
